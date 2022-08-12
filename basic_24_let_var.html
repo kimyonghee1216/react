@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    //ES6최신기술인데 바벨을 통해서 범용적인 스크립트로 변환
+    //React는 IE9이상은 돌아감
+    var a = 1
+    const b = 2 //수정할수없다
+    let c = 3 // var랑 비슷
+    //b = 3 오류발생
+    var a = 1
+    a = 5
+    var i = 15; //var는 global한 변수임
+    for (let i=0;i<=10;i++){
+      //let은 local한 변수임
+      console.log(i)
+    }
+    console.log(i)
+  </script>
+</body>
+</html>
